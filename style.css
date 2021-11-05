@@ -22,3 +22,20 @@ a{
     color: currentColor;
     text-decoration: none;
 }
+
+.navbar{
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.nav-item{
+    padding: 15px;
+}
