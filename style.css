@@ -8,6 +8,59 @@
     padding: 0;
 }
 
+:root{
+    --grey0: #f8f8f8;
+    --grey1: #dbe1e8;
+    --grey2: #b2becd;
+    --grey3: #6c7893;
+    --grey4: #454e56;
+    --grey5: #2a2e35;
+    --grey6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+}
+
+.light{
+    --bg: var(--grey0);
+    --bg-nav: linear-gradient(to right, var(--grey1), var(--grey3)) ;
+    --bg-dropdown: var(--grey0);
+    --text: var(--grey6);
+    --border-col: var(--blue);
+    --bg-solar: var(--yellow);
+}
+
+#light::before{
+    background: white;
+}
+
+.dark{
+    --bg: var(--grey5);
+    --bg-nav: linear-gradient(to right, var(--grey5), var(--grey6)) ;
+    --bg-dropdown: var(--grey6);
+    --text: var(--grey0);
+    --border-col: var(--purple);
+    --bg-solar: var(--blue);
+}
+
+#dark::before{
+    background: #2a2e35;
+}
+
+.solar{
+    --grey0: #fbffd4;
+    --grey1: #f7f8d0;
+    --grey2: #b6f880;
+    --grey3: #5ec72d;
+    --grey4: #3ea565;
+    --grey5: #005368;
+    --grey6: #003d4c;
+}
+
+#solar::before{
+    background: var(--bg-solar);
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     color: hsl(0, 0%, 0%);
@@ -37,7 +90,7 @@ a{
 }
 
 .nav-item{
-    padding: 15px;
+    padding: 30px;
 }
 
 .theme-btn:focus-within .theme-dropdown{
@@ -86,5 +139,10 @@ a{
 }
 
 main{
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    text-align: center;
 }
