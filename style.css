@@ -63,8 +63,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    color: hsl(0, 0%, 0%);
-    background: hsl(0, 0%, 100%);
+    color: var(--text);
+    background: var(--bg);
 }
 
 ul{
@@ -81,6 +81,8 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background: var(--bg-nav);
+    color: var(--text);
 }
 
 .navbar-nav{
@@ -109,7 +111,8 @@ a{
     margin-top: 2rem;
     padding: 0.5rem;    
 
-    background: lime;
+    background: var(--bg-dropdown);
+    border-top: 2px solid var(--border-col);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
@@ -129,7 +132,7 @@ a{
 
 .dropdown-item a::before{
     content: '';
-    border: 2px solid red;
+    border: 2px solid var(--border-col);
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
@@ -145,4 +148,5 @@ main{
     justify-content: center;
     padding: 150px;
     text-align: center;
+    background: var(--grey5);
 }
