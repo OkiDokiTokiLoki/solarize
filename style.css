@@ -37,7 +37,7 @@
 .dark{
     --bg: var(--grey5);
     --bg-nav: linear-gradient(to right, var(--grey5), var(--grey6)) ;
-    --bg-dropdown: var(--grey6);
+    --bg-dropdown: var(--grey5);
     --text: var(--grey0);
     --border-col: var(--purple);
     --bg-solar: var(--blue);
@@ -89,6 +89,10 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.logo{
+    color: var(--border-col);
 }
 
 .nav-item{
@@ -148,5 +152,4 @@ main{
     justify-content: center;
     padding: 150px;
     text-align: center;
-    background: var(--grey5);
 }
