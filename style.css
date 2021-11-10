@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,900&display=swap');
 
 *,
 *::before,
@@ -9,16 +9,16 @@
 }
 
 :root{
-    --grey0: #f8f8f8;
-    --grey1: #dbe1e8;
-    --grey2: #b2becd;
-    --grey3: #6c7893;
-    --grey4: #454e56;
-    --grey5: #2a2e35;
-    --grey6: #12181b;
-    --blue: #0084a5;
-    --purple: #a82dd1;
-    --yellow: #fff565;
+    --grey0: hsl(0, 0%, 97%);
+    --grey1: hsl(212, 22%, 88%);
+    --grey2: hsl(213, 21%, 75%);
+    --grey3: hsl(222, 15%, 50%);
+    --grey4: hsl(208, 11%, 30%);
+    --grey5: hsl(218, 12%, 19%);
+    --grey6: hsl(200, 20%, 9%);
+    --blue: hsl(192, 100%, 32%);
+    --purple: hsl(285, 65%, 50%);
+    --yellow: hsl(56, 100%, 70%);
 }
 
 .light{
@@ -44,17 +44,17 @@
 }
 
 #dark::before{
-    background: #2a2e35;
+    background: hsl(218, 12%, 19%);
 }
 
 .solar{
-    --grey0: #fbffd4;
-    --grey1: #f7f8d0;
-    --grey2: #b6f880;
-    --grey3: #5ec72d;
-    --grey4: #3ea565;
-    --grey5: #005368;
-    --grey6: #003d4c;
+    --grey0: hsl(66, 100%, 92%);
+    --grey1: hsl(61, 74%, 89%);
+    --grey2: hsl(93, 90%, 74%);
+    --grey3: hsl(101, 63%, 48%);
+    --grey4: hsl(143, 45%, 45%);
+    --grey5: hsl(192, 100%, 20%);
+    --grey6: hsl(192, 100%, 15%);
 }
 
 #solar::before{
@@ -93,10 +93,22 @@ a{
 
 .logo{
     color: var(--border-col);
+    font-weight: bolder;
+    transition: all 150ms ease-in-out;
 }
 
-.nav-item{
+.logo:hover{
+    filter: hue-rotate(-200deg);
+}
+
+.nav-item,
+.theme-btn{
     padding: 30px;
+    transition: all 150ms ease-in-out;
+}
+
+.nav-item:hover{
+    color: var(--border-col);
 }
 
 .theme-btn:focus-within .theme-dropdown{
@@ -107,10 +119,10 @@ a{
 .theme-dropdown{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     position: absolute;
-    width: 300px;
+    width: 320px;
     height: 3em;
     margin-top: 2rem;
     padding: 0.5rem;    
@@ -130,7 +142,6 @@ a{
 .dropdown-item a{
     width: 100%;
     height: 100%;
-    size: 0.7rem;
     padding: 10px;
 }
 

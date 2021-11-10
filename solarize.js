@@ -1,5 +1,5 @@
 const darkButton = document.querySelector('#dark');
-const lighthButton = document.querySelector('#light');
+const lightButton = document.querySelector('#light');
 const solarButton = document.querySelector('#solar');
 const body = document.body;
 
@@ -17,7 +17,7 @@ darkButton.onclick = () => {
     localStorage.setItem('theme', 'dark');
 };
 
-lighthButton.onclick = () => {
+lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
     localStorage.setItem('theme', 'light');
 };
@@ -37,7 +37,7 @@ solarButton.onclick = () => {
         solarButton.style.cssText = 
             `--bg-solar: white;`
         body.classList.add('solar');
-        solarButton.innerText = 'polar';
+        solarButton.innerText = 'normal';
 
         localStorage.setItem('isSolar', true);
     }
