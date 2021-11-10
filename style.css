@@ -81,6 +81,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: var(--bg-nav);
     color: var(--text);
 }
@@ -92,13 +93,20 @@ a{
 }
 
 .logo{
-    color: var(--border-col);
     font-weight: bolder;
-    transition: all 150ms ease-in-out;
+    color: var(--text);
+    margin-left: 30px;
+    padding: 0 15px;
+    border: 2px solid var(--border-col);
+    border-radius: 50px;
+    transition: all 300ms ease-in;
 }
 
 .logo:hover{
-    filter: hue-rotate(-200deg);
+    background-color: var(--border-col);
+    animation: color-rotate 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .nav-item,
@@ -164,3 +172,13 @@ main{
     padding: 150px;
     text-align: center;
 }
+
+@keyframes color-rotate{
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-90deg);
+    }
+}
+
