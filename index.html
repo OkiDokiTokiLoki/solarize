@@ -22,13 +22,13 @@
 
             <li class="theme-btn">
                 
-                <a href="#"><img src="./dark.png" alt="theme-icon" class="theme-icon"></a>
+                <a href="#"><img src="./light.png" alt="theme-icon" class="theme-icon"></a>
 
                 <ul class="theme-dropdown">
-                    <li class="dropdown-item">
+                    <li class="dropdown-item" onclick='iconSwap("./dark.png");'>
                         <a id="light" href="#">light</a>
                     </li>
-                    <li class="dropdown-item">
+                    <li class="dropdown-item" onclick='iconSwap("./light.png");'>
                         <a id="dark" href="#">dark</a>
                     </li>
                     <li class="dropdown-item">
@@ -45,7 +45,7 @@
         <p>"light" and "dark" is as the name suggests, both utilize the same color palette just slightly inverted</p>
         <p>"solar" adds a new color palette to both light and dark themes</p>
     
-    </main>
+    </main> 
 
     <script src="./solarize.js"></script>
     

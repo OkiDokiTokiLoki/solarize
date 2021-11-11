@@ -3,6 +3,8 @@ const lightButton = document.querySelector('#light');
 const solarButton = document.querySelector('#solar');
 const body = document.body;
 
+const themeIcon = document.querySelector('.theme-icon');
+
 // Applying a chached theme on reload
 const theme = localStorage.getItem('theme');
 const isSolar = localStorage.getItem('isSolar');
@@ -10,6 +12,10 @@ const isSolar = localStorage.getItem('isSolar');
 if (theme){
     body.classList.add(theme);
     isSolar && body.classList.add('solar');
+}
+
+function iconSwap(newSource){
+    themeIcon.src=newSource;
 }
 
 darkButton.onclick = () => {
@@ -42,3 +48,5 @@ solarButton.onclick = () => {
         localStorage.setItem('isSolar', true);
     }
 };
+
+

@@ -21,6 +21,14 @@
     --yellow: hsl(56, 100%, 70%);
 }
 
+.one{
+    background: url(./light.png);
+}
+
+.two{
+    background: url(./dark.png);
+}
+
 .light{
     --bg: var(--grey0);
     --bg-nav: linear-gradient(to right, var(--grey1), var(--grey3)) ;
@@ -177,4 +185,3 @@ main{
         filter: hue-rotate(-90deg);
     }
 }
-
