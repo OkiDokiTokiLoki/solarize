@@ -1,9 +1,8 @@
 const darkButton = document.querySelector('#dark');
 const lightButton = document.querySelector('#light');
 const solarButton = document.querySelector('#solar');
-const body = document.body;
-
 const themeIcon = document.querySelector('.theme-icon');
+const body = document.body;
 
 // Applying a chached theme on reload
 const theme = localStorage.getItem('theme');
@@ -14,6 +13,7 @@ if (theme){
     isSolar && body.classList.add('solar');
 }
 
+// Depending on the active theme, it will select the appropriate icon 
 function iconSwap(newSource){
     themeIcon.src=newSource;
 }
@@ -48,5 +48,3 @@ solarButton.onclick = () => {
         localStorage.setItem('isSolar', true);
     }
 };
-
-
