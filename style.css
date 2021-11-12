@@ -177,3 +177,10 @@ main{
         filter: hue-rotate(-90deg);
     }
 }
+
+@media screen and (max-width: 650px) {
+
+    main{
+        padding: 6rem 25px 0 25px;
+    }
+}
