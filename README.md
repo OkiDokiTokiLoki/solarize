@@ -5,7 +5,7 @@
 ## General info
 * A simple theme changer, with a twist.
 
-* Each theme has a "solar" version. So view both "light" and "dark" themes, then switch between "solar" for each of the themes to see a different palette.
+* Each theme has a "solar" version. So view both "light" and "dark" themes, then switch between "solar" and "normal" for each of the themes to see a different palette.
 	
 ## Technologies
 This is a very simple program, but with an interesting take on "light" and "dark" mode themes.
